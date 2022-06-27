@@ -75,6 +75,13 @@ use App\Http\Controllers\PageController;
 //     dd($data);
 
 // });
-
 Route::get('/',[PageController::class,'getIndex']);
-Route::get('/form',[PageController::class,'getAdminAdd']);
+Route::get('/admin-add-form',[PageController::class,'getAdminAdd'])->name('add-product');
+Route::post('/admin-add-form',[PageController::class,'postAdminAdd']);
+
+Route::get('/showadmin',[PageController::class, 'getIndexAdmin']);
+
+
+Route::get('/admin-edit-form/{id}',[PageController::class,'getAdminEdit']);
+Route::post('/admin-edit',[PageController::class,'postAdminEdit']);
+Route::post('/admin-delete/{id}',[PageController::class,'postAdminDelete']);

@@ -5,7 +5,6 @@
   <div class="container">
     <div class="col-12 col-md-6" style="background: red;color:white">Số sản phẩm: {{count($products)}}</div>
     <div class="col-12 col-md-6" style="background: blue;color:white">Đã bán: <br />
-      <p>Tổng: {{$sumSold}}</p>
       <p>Hôm nay: 1</p>
       <p>Tháng này: 3</p>
       <p>Năm nay: 4</p>
@@ -13,11 +12,6 @@
   </div>
   <div class="pull-left">
     <h2>List</h2>
-  </div>
-  <div class="pull-right">
-    <a href="{{route('export')}}" class="btn btn-primary">
-      Xuất ra PDF
-    </a>
   </div>
   <table id="table_admin_product" class="table table-striped display">
     <thead>
