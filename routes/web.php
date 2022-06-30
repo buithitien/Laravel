@@ -85,3 +85,4 @@ Route::get('/showadmin',[PageController::class, 'getIndexAdmin']);
 Route::get('/admin-edit-form/{id}',[PageController::class,'getAdminEdit']);
 Route::post('/admin-edit',[PageController::class,'postAdminEdit']);
 Route::post('/admin-delete/{id}',[PageController::class,'postAdminDelete']);
+Route::get('/detail/{id}',[PageController::class, 'getDetail']);
